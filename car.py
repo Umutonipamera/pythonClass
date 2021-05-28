@@ -1,9 +1,13 @@
 class Car:
-    name="Toyota" 
-    def  __init__(self,model,colour,accelelation,registration):
+   
+    def  __init__(self, name,model,color,registration):
+        self.name=name
         self.model=model
-        self.colour=colour
-        self.accelelation=accelelation
+        self.color=color
         self.registration=registration
-    def hoot(self):
-        return f"Hello your car name is{self.name} it's model is{self.model},it's colour is{self.colour}, it's accelelation is{self.accelelation} and it's registration is{self.registration}"  
+    def stop(self):
+        return f"Hello this {self.name} is beatiful"
+       
+
+    def caryingPeople(self):
+        return f"Hello this {self.name}  car ,which is {self.model} in model,that has {self.color} color, and has {self.registration} registration number, it carries many people"  

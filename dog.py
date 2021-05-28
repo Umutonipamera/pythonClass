@@ -1,9 +1,16 @@
 class Dog:
-    name="Simba"
-    def __init__( self,age,colour,name):
-        self.age=age
-        self.colour=colour
+  
+    def __init__( self,name,color,age):
         self.name=name
-    def biting(self):
-        return f"Hello your dog age is{self.age} years old,colour is{self.colour},and it's name is{self.name}"
+        self.color=color
+        self.age=age
+
+
+    def bark(self):
+        return f"Yesterday I heard {self.name} barking wowoo "
+
+    def running(self):
+        return f" yesterday I saw  a {self.name} which is {self.color}  in color running on the same day when it turns{self.age} years old"
+
+        
     
