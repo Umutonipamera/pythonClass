@@ -6,8 +6,8 @@ class Car:
         self.color=color
         self.registration=registration
     def stop(self):
-        return f"Hello this {self.name} is beatiful"
+        return f"Hello this {self.name} name always stops in the main road"
        
 
-    def caryingPeople(self):
-        return f"Hello this {self.name}  car ,which is {self.model} in model,that has {self.color} color, and has {self.registration} registration number, it carries many people"  
+    def move(self):
+        return f"Hello this {self.name}  car ,which is {self.model} in model,that has {self.color} color, and has {self.registration} registration number, it moves very faster"  
