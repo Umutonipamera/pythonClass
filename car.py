@@ -6,7 +6,7 @@ class Car:
         self.color=color
         self.registration=registration
     def stop(self):
-        return f"Hello this {self.name} name always stops in the main road"
+        return f"Hello this {self.name} car always stops in the main road"
        
 
     def move(self):
