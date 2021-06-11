@@ -51,7 +51,7 @@ class Account:
     def repayment (self,amount):
 
         try:
-            amount+10
+            amount+4
         except TypeError:
             return f"Please enter amount in figures"   
         if amount<0: 
@@ -70,9 +70,9 @@ class Account:
 
     def transfer(self,amount): 
         try:
-            amount<0
+            amount+2
         except TypeError:
-            return f"Please enter valid amount"
+            return f"Please enter amount in figures"
         fee=amount*0.05
         total=amount+fee
         if total>self.balance:
@@ -88,6 +88,10 @@ class MobileMoneyAccount(Account):
              Account.__init__( self,name,phone)
              self.service_provider=service_provider
     def buy_airtime(self,amount):
+        try:
+            amount+1
+        except TypeError:
+            return f"Please Enter amount in figures"   
         if  amount<0:
             return f"Please enter valid amount"
         elif amount>=self.balance: 
